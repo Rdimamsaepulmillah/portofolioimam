@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Pribadi Imam - Web Developer & UI/UX Designer yang berfokus pada pembuatan aplikasi web modern, cepat, dan responsif.">
+  <title>Rd Imam | Portofolio</title>
+  <!-- Google Fonts - Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Neon Cursor Follower -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- Ambient Glassmorphic Background Orbs -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+  <div class="ambient-orb orb-3"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo"> Portofolio<span>.</span></a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav-links">
+        <a href="#beranda" class="active">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <!-- Action Area -->
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle Theme" class="theme-btn">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <a href="#kontak" class="btn btn-sm btn-primary">Kontak</a>
+        <button class="mobile-nav-toggle" aria-label="Menu Mnav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav">
+    <nav class="mobile-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="beranda" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hello-tag">Halo, Selamat Datang!</div>
+          <h1 class="hero-title">Saya <span class="text-gradient">Rd.Imam Saepul Millah</span></h1>
+          <h2 class="hero-subtitle"><span id="typewriter">Backend & Web Developer</span><span class="typed-cursor">|</span></h2>
+          <p class="hero-description">
+            Lulusan Teknik Informatika dengan pengalaman sebagai Backend Developer melalui Program Magang Nasional di Kementerian Desa serta pengembangan website sebagai freelancer. Memiliki keahlian dalam membangun REST API, mengelola database, dan mengembangkan aplikasi web menggunakan Node.js, Express.js, PHP, serta MySQL. Berkomitmen menghadirkan solusi digital yang efisien, aman, dan berkualitas.
+          </p>
+          <div class="hero-actions">
+            <a href="#kontak" class="btn btn-primary">Hubungi Saya</a>
+            <!-- LINK SHARING GOOGLE DRIVE CV -->
+            <a href="https://drive.google.com/file/d/12rfe4qSJ8iZk_kplV0jXd96NwOMilvwe/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Unduh CV</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <!-- LINK DIRECT RENDER GOOGLE DRIVE FOTO PROFIL -->
+            <img src="https://6a5b03fd53cbb51f4783aa16.imgix.net/sandbox/foto2.png" alt="foto" class="avatar-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag bg-glow-text">SIAPA SAYA</span>
+          <h2 class="section-title">Tentang Saya</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-content">
+          <h3>Lulusan Sarjana Teknik Informatika dari UIN Sunan Gunung Djati Bandung.</h3>
+          <p>
+            Memiliki pengalaman sebagai Backend Developer melalui Program Magang Nasional di Kementerian Desa dan Pembangunan Daerah Tertinggal, Badan Pusat
+Data dan Informasi (Pusdatin), dengan berkontribusi dalam pengembangan dan pemeliharaan backend aplikasi menggunakan
+Node.js dan Express.js, membangun serta mengintegrasikan REST API, mengelola database SQL, serta melakukan pengujian
+API menggunakan Postman. Selain itu, berpengalaman sebagai freelancer dalam pengembangan website profil perusahaan
+menggunakan HTML, CSS, JavaScript, Python, dan SQL.
+Memiliki pengalaman kepemimpinan sebagai Ketua Umum Himpunan
+Mahasiswa Jurusan Teknik Informatika periode 2024–2025 yang mengembangkan kemampuan koordinasi tim, komunikasi,
+dan manajemen proyek. Mampu bekerja secara kolaboratif maupun mandiri, memiliki kemampuan problem solving yang baik,
+serta berkomitmen menghasilkan solusi backend yang efisien, aman, dan berkualitas.
+
+          </p>
+          <p>
+            Saya merupakan pribadi yang memiliki semangat belajar tinggi, cepat beradaptasi dengan perkembangan teknologi, serta senang berkolaborasi dalam menciptakan solusi digital yang inovatif, efektif, dan bernilai bagi pengguna.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="pengalaman" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag bg-glow-text">RIWAYAT PERJALANAN</span>
+          <h2 class="section-title">Pengalaman & Pendidikan</h2>
+          <div class="underline"></div>
+        </div>
+
+        <!-- Experience Tab Switcher -->
+        <div class="experience-tabs">
+          <button class="tab-btn active" data-tab="kerja">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            Pengalaman Kerja
+          </button>
+          <button class="tab-btn" data-tab="organisasi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            Pengalaman Organisasi
+          </button>
+          <button class="tab-btn" data-tab="pendidikan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Riwayat Pendidikan
+          </button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="tab-contents">
+          <!-- Tab 1: Kerja -->
+          <div class="tab-pane active" id="tab-kerja">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025-2026</div>
+                <div class="timeline-content">
+                  <h3>Backend Developer</h3>
+                  <span class="timeline-company">MAGANG NASIONAL KEMENTERIAN DESA DAN PEMBANGUNAN DAERAH TERTINGGAL RI</span>
+                  <p> Sistem Presensi Pegawai Kementerian Desa Daerah dan Tertinggal Mengembangkan backend sistem presensi pegawai
+berbasis web dengan membangun API, mengelola database, serta memastikan keamanan dan integrasi sistem berjalan optimal.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                  <h3>Web Developer FullStuck</h3>
+                  <span class="timeline-company">FREELANCE PT. PESONA PERSADA UTAMA</span>
+                  <p>Mengembangkan website company profile PT Pesona Persada Utama menggunakan teknologi full stack dengan fokus pada tampilan yang profesional, responsif, dan mudah digunakan. Bertanggung jawab dalam proses analisis kebutuhan, perancangan database, pengembangan antarmuka (frontend), pengembangan sisi server (backend), integrasi database, serta deployment aplikasi. Mengimplementasikan fitur pengelolaan konten, informasi layanan, profil perusahaan, kontak, serta optimasi performa dan keamanan website untuk memberikan pengalaman pengguna yang optimal.</p>
+                </div>
+              </div>
+        <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                  <h3>Web Developer FullStuck</h3>
+                  <span class="timeline-company">FREELANCE PT. PIONEER BUSNESS CONSULTANS</span>
+                  <p>Mengembangkan website company profile PT Pioneer Business Consultants menggunakan teknologi full stack dengan fokus pada tampilan yang profesional, responsif, dan mudah digunakan. Bertanggung jawab dalam proses analisis kebutuhan, perancangan database, pengembangan antarmuka (frontend), pengembangan sisi server (backend), integrasi database, serta deployment aplikasi. Mengimplementasikan fitur pengelolaan konten, informasi layanan, profil perusahaan, kontak, serta optimasi performa dan keamanan website untuk memberikan pengalaman pengguna yang optimal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Organisasi -->
+          <div class="tab-pane" id="tab-organisasi">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - 2025</div>
+                <div class="timeline-content">
+                  <h3>Ketua Umum Himpunan Mahasiswa Jurusan Teknik Informatika</h3>
+                  <span class="timeline-company">UIN Sunan Gunung Djati Bandung</span>
+                  <p>Memimpin organisasi mahasiswa tingkat himpunanjurusan dengan 47 anggota aktif yang terbagi ke dalam 8 bidang departemen. Mengoordinasikan perencanaan dan pelaksanaan berbagai program kerja, kegiatan akademik, pengembangan organisasi, pengabdian masyarakat, serta event kemahasiswaan untuk meningkatkan kolaborasi dan kapasitas anggota.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 - 2024</div>
+                <div class="timeline-content">
+                  <h3>Sekretaris Bidang Seni dan Olahraga HMJ Teknik Informatika</h3>
+                  <span class="timeline-company">UIN Sunan Gunung Djati Bandung</span>
+                  <p>Bertanggung jawab atas administrasi operasional Bidang Seni dan Olahraga, mulai dari penyusunan dokumen, pencatatan hasil rapat, pengarsipan, hingga penyusunan laporan sebagai bentuk evaluasi dan pertanggungjawaban program kerja.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - 2025</div>
+                <div class="timeline-content">
+                  <h3>Ketua Bidang ADVOKASI </h3>
+                  <span class="timeline-company">Rayon PMII Sains dan Teknologi</span>
+                  <p>Mengelola informasi dan publikasi PMII,Menyebarkan konten melalui media sosial,Membangun citra
+positif organisasi, Advokasi Menyampaikan dan memperjuangkan aspirasi mahasiswa.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - 2026</div>
+                <div class="timeline-content">
+                  <h3>Sekretaris PImpinan Anak Cabang IPNU</h3>
+                  <span class="timeline-company">PAC IPNU KEC. CIKANCUNG Bandung</span>
+                  <p>Bertanggung jawab atas pengelolaan administrasi dan pelaporan organisasi, serta mendukung Ketua Umum dalam koordinasi lintas divisi, komunikasi, dan pelaksanaan program kerja agar berjalan efektif dan terstruktur.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019 - 2020</div>
+                <div class="timeline-content">
+                  <h3>Sekretaris PImpinan Anak Cabang IPNU</h3>
+                  <span class="timeline-company">PAC IPNU KEC. Bl. Limbangan Garut</span>
+                  <p>Bertanggung jawab atas pengelolaan administrasi dan pelaporan organisasi, serta mendukung Ketua Umum dalam koordinasi lintas divisi, komunikasi, dan pelaksanaan program kerja agar berjalan efektif dan terstruktur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Pendidikan -->
+          <div class="tab-pane" id="tab-pendidikan">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 - 2025</div>
+                <div class="timeline-content">
+                  <h3> UIN Sunan Gunung Djati Bandung</h3>
+                  <span class="timeline-company">S1 Teknik Informatika</span>
+                  <p>Lulus dengan IPK 3,67 serta aktif mengikuti berbagai kegiatan organisasi, kepemimpinan, dan pengembangan kompetensi di bidang teknologi informasi.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017 - 2020</div>
+                <div class="timeline-content">
+                  <h3>MA Al-Hidayah Limbangan Garut</h3>
+                  <span class="timeline-company">Jurusan MIPA</span>
+                  <p>Menyelesaikan pendidikan di Madrasah Aliyah Swasta dengan membangun karakter, kedisiplinan, dan semangat belajar yang kuat sebagai landasan dalam pengembangan kompetensi akademik, kepemimpinan, dan profesional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="section gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag bg-glow-text">Dokumentasi</span>
+          <h2 class="section-title">Galeri</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-item" data-category="perkotaan" data-tilt>
+            <div class="gallery-img-wrapper">
+              <img src="https://6a5b03fd53cbb51f4783aa16.imgix.net/sandbox/foto-kemendes.jpeg" alt="Kemendes" />
+              <div class="gallery-overlay">
+                <span class="gallery-item-cat">Magang</span>
+                <h3 class="gallery-item-title">Kementerian Desa, Pembangunan Daerah Tertinggal Republik Indonesia</h3>
+                <span class="gallery-view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-item" data-category="perkotaan" data-tilt>
+            <div class="gallery-img-wrapper">
+              <img src="https://6a5b03fd53cbb51f4783aa16.imgix.net/sandbox/Kemendes.jpg" alt="Kemendes" />
+              <div class="gallery-overlay">
+                <span class="gallery-item-cat">Magang</span>
+                <h3 class="gallery-item-title">Kementerian Desa, Pembangunan Daerah Tertinggal Republik Indonesia</h3>
+                <span class="gallery-view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-item" data-category="lanskap" data-tilt>
+            <div class="gallery-img-wrapper">
+              <img src="https://6a5b03fd53cbb51f4783aa16.imgix.net/sandbox/himatif.JPG" alt="himatif" />
+              <div class="gallery-overlay">
+                <span class="gallery-item-cat">Organisasi</span>
+                <h3 class="gallery-item-title">HIMATIF UIN Sunan Gunung Djati Bandung</h3>
+                <span class="gallery-view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="gallery-item" data-category="potret" data-tilt>
+            <div class="gallery-img-wrapper">
+              <img src="https://6a5b03fd53cbb51f4783aa16.imgix.net/sandbox/pelantikan.jpg" alt="pelantikan" />
+              <div class="gallery-overlay">
+                <span class="gallery-item-cat">Organisasi</span>
+                <h3 class="gallery-item-title">Pelantikan HIMATIF UIN Sunan Gunung Djati Bandung</h3>
+                <span class="gallery-view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="gallery-item" data-category="lanskap" data-tilt>
+            <div class="gallery-img-wrapper">
+              <img src="https://6a5b03fd53cbb51f4783aa16.imgix.net/sandbox/itfair.JPG" alt="itfair" />
+              <div class="gallery-overlay">
+                <span class="gallery-item-cat">organisasi </span>
+                <h3 class="gallery-item-title">Kegiatan IT FAIR HIMATIF UIN Sunan Gunung Djati Bandung</h3>
+                <span class="gallery-view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="gallery-item" data-category="konseptual" data-tilt>
+            <div class="gallery-img-wrapper">
+              <img src="https://6a5b03fd53cbb51f4783aa16.imgix.net/sandbox/mahasiswa%20baru%20ditni.jpg" alt="organisasi" />
+              <div class="gallery-overlay">
+                <span class="gallery-item-cat">Mahasiswa Baru</span>
+                <h3 class="gallery-item-title">Kegiatan Mahasiswa Baru di TNI</h3>
+                <span class="gallery-view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true">
+      <span class="lightbox-close" aria-label="Tutup Galeri">&times;</span>
+      <div class="lightbox-content-wrapper">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Detail view" />
+        <div class="lightbox-info">
+          <span class="lightbox-category" id="lightbox-category">Kategori</span>
+          <h3 class="lightbox-title" id="lightbox-title">Judul Foto</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="keahlian" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag bg-glow-text">KEMAMPUAN</span>
+          <h2 class="section-title">Keahlian</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+          <div class="skills-columns">
+            
+            <!-- Soft Skills Column -->
+            <div class="skills-category-card" data-tilt>
+              <div class="category-header">
+                <div class="category-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3 class="category-title">Soft Skills</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-tag soft-skill">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Leadership</span>
+                </div>
+                <div class="skill-tag soft-skill">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Problem Solving</span>
+                </div>
+                <div class="skill-tag soft-skill">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Team Collaboration</span>
+                </div>
+                <div class="skill-tag soft-skill">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Communication</span>
+                </div>
+                <div class="skill-tag soft-skill">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Time Management</span>
+                </div>
+                <div class="skill-tag soft-skill">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Project Coordination</span>
+                </div>
+                <div class="skill-tag soft-skill">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Adaptability</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hard Skills Column -->
+            <div class="skills-category-card" data-tilt>
+              <div class="category-header">
+                <div class="category-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 class="category-title">Hard Skills</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-tag hard-skill js">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-tag hard-skill html">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">HTML</span>
+                </div>
+                <div class="skill-tag hard-skill css">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">CSS</span>
+                </div>
+                <div class="skill-tag hard-skill sql">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">SQL</span>
+                </div>
+                <div class="skill-tag hard-skill node">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Node.js</span>
+                </div>
+                <div class="skill-tag hard-skill express">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Express.js</span>
+                </div>
+                <div class="skill-tag hard-skill rest">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">REST API Development</span>
+                </div>
+                <div class="skill-tag hard-skill api">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">API Integration</span>
+                </div>
+                <div class="skill-tag hard-skill mysql">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">MySQL</span>
+                </div>
+                <div class="skill-tag hard-skill postman">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Postman</span>
+                </div>
+                <div class="skill-tag hard-skill vscode">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Visual Studio Code</span>
+                </div>
+                <div class="skill-tag hard-skill xampp">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">XAMPP</span>
+                </div>
+                <div class="skill-tag hard-skill office">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Microsoft Office (Word & Excel)</span>
+                </div>
+                <div class="skill-tag hard-skill canva">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">Canva</span>
+                </div>
+                <div class="skill-tag hard-skill coreldraw">
+                  <span class="skill-dot"></span>
+                  <span class="skill-name">CorelDRAW</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag bg-glow-text">HUBUNGI SAYA</span>
+          <h2 class="section-title">Mari Berkolaborasi</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <h3>Mari Wujudkan Ide Menjadi Solusi</h3>
+            <p>Saya percaya setiap tantangan dapat diselesaikan melalui kolaborasi dan teknologi. Terbuka untuk peluang karier, pengembangan sistem, maupun diskusi profesional.</p>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>rdsaepulmillah@gmail.com</span>
+              </div>
+              <div class="contact-detail-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <a href="https://wa.me/628132247618" target="_blank" rel="noopener noreferrer">+62 813-2247-618</a>
+              </div>
+              <div class="contact-detail-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Kab. Bandung, Jawa Barat, Indonesia</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/Rdimamsaepulmillah" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/rd-imam-saepul-millah/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="https://www.instagram.com/radenking_18/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-panel">
+            <form id="contact-form" autocomplete="off">
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+              </div>
+              <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" required placeholder="name@domain.com">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subjek</label>
+                <input type="text" id="subject" name="subject" required placeholder="Topik pembicaraan">
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan Anda</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tuliskan pesan Anda secara mendetail..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-area">
+    <div class="container footer-container">
+      <p>&copy; 2026 raden imam. All rights reserved.</p>
+      <a href="#beranda" class="back-to-top" aria-label="Kembali ke atas">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
